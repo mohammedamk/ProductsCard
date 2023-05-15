@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: linear-gradiet(300deg, #757b87, #909d9d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.card {
+    height: auto;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+
+.card:hover {
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border-color: gray;
+
+    .descp {
+        color: blue;
+    }
+}
+
+.card-body {
+    text-align: start;
+}
+
+img {
+    max-width: 100%;
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+hr {
+    width: 100%;
+}
+
+#movie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating {
+    border: 1px solid gray;
+    background-color: green;
+    color: white;
+    width: 20%;
+}
+
+#discount {
+    color: green;
+}
+
+.del-price {
+    color: grey;
+}
+
+.price {
+    color: black;
+}
+
+.descp:hover {
+    color: blue;
+}
+
+@media only screen and (max-width: 996px) {
+    #movie {
+        display: inline;
+    }
+
+    .card {
+        max-width: 100%;
+        max-height: 100vh;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    img {
+        max-width: 100%;
+        max-height: 100vh;
+    }
+
+    .rating {
+        width: 15%;
+    }
+}
